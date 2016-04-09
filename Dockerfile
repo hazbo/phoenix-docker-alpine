@@ -13,7 +13,8 @@ RUN apk update && apk add \
         erlang-syntax-tools \
         elixir \
         erlang-ssl \
-        erlang-crypto
+        erlang-crypto \
+        && rm -rf /var/cache/apk/*
 
 ENV PHOENIX_VERSION 1.1.4
 
